@@ -12,3 +12,9 @@
     - start server: npm init 
     - install express: npm install express
     - npm nodemon: automatically restarting (start package.json)
+    - npm morgan: http request logger middleware for nodejs
+
+    *** Template engine (handlerbar) ***
+    - cấu trúc HTML gọn gàng, chia layout ...
+    - set view folder
+    - docs express-handlebar: https://www.npmjs.com/package/express-handlebars
