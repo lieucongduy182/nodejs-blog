@@ -5,6 +5,9 @@ const morgan = require('morgan');
 const app = express();
 const port = 3000;
 
+// static files server
+app.use(express.static(path.join(__dirname, 'public')));
+
 // HTTP logger
 app.use(morgan('combined'));
 
@@ -15,7 +18,7 @@ app.set('views', path.join(__dirname, 'resources/views'));
 console.log(path.join(__dirname, 'resources/views'))
 
 // router
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
     return res.render('home');
 });
 

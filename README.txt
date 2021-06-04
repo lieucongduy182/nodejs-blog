@@ -18,3 +18,8 @@
     - cấu trúc HTML gọn gàng, chia layout ...
     - set view folder
     - docs express-handlebar: https://www.npmjs.com/package/express-handlebars
+    *** Static files & SCSS ***
+    - public: img, css, ...
+    - npm node-sass: https://www.npmjs.com/package/node-sass
+    - app.scss: cấu hình command line interface -> combine css
+    - config command: node-sass [options] <input> [output]
