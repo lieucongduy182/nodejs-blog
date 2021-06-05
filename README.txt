@@ -42,3 +42,8 @@
     - luồng đi: tương tác với browser -> request webserver với http protocol qua router -> controller
         + controller -> model: lấy dữ liệu ; controller -> view: lấy view tương ứng hoàn chỉnh
         + trả về client -> web server qua http protocol -> hiển thị ra browser
+    *** Model ***
+    - Connect MongoDB: Compass -> create Database
+    - mongoose: a MongoDB object modeling tool, work in an asynchronous environment
+    - Defi Model: mongoose.schema
+    - tương tác controller với model
