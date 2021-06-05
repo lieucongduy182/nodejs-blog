@@ -23,3 +23,22 @@
     - npm node-sass: https://www.npmjs.com/package/node-sass
     - app.scss: cấu hình command line interface -> combine css
     - config command: node-sass [options] <input> [output]
+    *** Query Parameters ***
+    - truyền trên URL: request URL
+    - tồn tại trong các method (chủ yếu method: GET)
+    - key=value&key1=value1&...
+    *** Form default behavior ***
+    - default method: GET
+    - action: redirect URL
+    - method POST: send data from client to server (Form Data)
+    - middleware: form(urlencoded), client javascript(json) 
+    *** Mô hình MVC ***
+    - model - view - controller
+        + model lưu trữ toàn bộ dữ liệu. thể hiện các thao tác với csdl như truy vấn, xử lý, ...
+        + view phần giao diện, lấy được thông tin dữ liệu của MVC, tương tác với controller, hiển thị
+        yêu cầu gửi cho controller, ko tương tác hoặc lấy được dữ liệu từ controller
+        + controller xử lý các yêu cầu phía client (view), tương tác với model lấy dữ liệu để xử lý rồi
+        truyền sang view
+    - luồng đi: tương tác với browser -> request webserver với http protocol qua router -> controller
+        + controller -> model: lấy dữ liệu ; controller -> view: lấy view tương ứng hoàn chỉnh
+        + trả về client -> web server qua http protocol -> hiển thị ra browser
