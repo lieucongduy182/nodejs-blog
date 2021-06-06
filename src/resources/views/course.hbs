@@ -1,0 +1,29 @@
+<div class='mt-4'>
+    <div class='row'>
+        <div class='col-lg-3'>
+            <p>Side Bar</p>
+            <button type='button' class='btn btn-outline-success'>
+                Learn Now
+            </button>
+        </div>
+        <div class='col-lg-9'>
+            <div class='card-deck'>
+                <div class='card border-0'>
+                    <div class='card-body'>
+                        <h4 class='card-title'>{{course.name}}</h4>
+                        <iframe
+                            width='800'
+                            height='400'
+                            src='https://www.youtube.com/embed/{{course.videoId}}'
+                            title='YouTube video player'
+                            frameborder='0'
+                            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                            allowfullscreen
+                        ></iframe>
+                        <p class='card-text'>{{course.desc}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

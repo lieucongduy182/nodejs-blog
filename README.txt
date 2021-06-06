@@ -47,3 +47,4 @@
     - mongoose: a MongoDB object modeling tool, work in an asynchronous environment
     - Defi Model: mongoose.schema
     - tương tác controller với model
+    - Read DB: docs handlebars ->  util: mongoose.js -> convert literal object
